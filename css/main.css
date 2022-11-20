@@ -144,7 +144,7 @@ img {
 }
 
 .promotion {
-  margin-bottom: 48px;
+  margin-bottom: 96px;
 }
 
 .promotion__container {
@@ -297,10 +297,6 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.011px;
-}
-
-.features {
-  margin-bottom: 48px;
 }
 
 .features__container {
