@@ -1,0 +1,32 @@
+.sidebar {
+  grid-area: sidebar;
+  display: grid;
+  grid-template-areas: "side-nav community";
+  grid-template-columns: 1fr auto;
+}
+
+.sidebar__nav {
+  grid-area: side-nav;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 12px;
+
+  background-color: var(--bg-color--dark);
+}
+
+.sidebar__nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.sidebar__icon {
+  width: 36px;
+  height: 36px;
+
+  background-color: var(--icon-color);
+}
