@@ -1,12 +1,12 @@
 .sidebar {
   grid-area: sidebar;
   display: grid;
-  grid-template-areas: "side-nav community";
+  grid-template-areas: "platform-nav community-nav";
   grid-template-columns: 1fr auto;
 }
 
-.sidebar__nav {
-  grid-area: side-nav;
+.platform-nav {
+  grid-area: platform-nav;
 
   display: flex;
   flex-direction: column;
@@ -17,16 +17,36 @@
   background-color: var(--bg-color--dark);
 }
 
-.sidebar__nav-list {
+.platform-nav__list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 12px;
 }
 
-.sidebar__icon {
+.platform-nav__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 36px;
   height: 36px;
 
+  border-radius: 50%;
+}
+
+.platform-nav__icon-box--accent {
+  background-color: var(--accent--blue);
+}
+
+.platform-nav__icon {
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+
   background-color: var(--icon-color);
+}
+
+.platform-nav__icon--accent {
+  background-color: var(--accent--blue);
 }

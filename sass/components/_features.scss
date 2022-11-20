@@ -1,0 +1,44 @@
+.features {
+  margin-bottom: 48px;
+}
+
+.features__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 7.6%;
+
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.features__item {
+  min-width: 240px;
+}
+
+.features__title {
+  @include font(13px, 600, 18px);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+    margin-bottom: 24px;
+
+    background: radial-gradient(
+      circle,
+      rgba(0, 56, 229, 1) 35%,
+      rgba(0, 56, 229, 0.15) 35%
+    );
+    border-radius: 50%;
+  }
+}
+
+.features__text {
+  @include font(13px, 400, 18px);
+
+  color: var(--secondary-text-color);
+}

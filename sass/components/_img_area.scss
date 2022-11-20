@@ -1,0 +1,17 @@
+.img-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+
+  border: 1px solid tomato;
+}
+
+.img-area__description {
+  max-width: 83px;
+  text-align: center;
+
+  @include font(16px, 500, 24px);
+  letter-spacing: -0.011px;
+}

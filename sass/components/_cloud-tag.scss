@@ -3,5 +3,16 @@
   align-items: center;
   gap: 18px;
 
+  margin-bottom: 24px;
+
+  letter-spacing: 0.01px;
   text-transform: uppercase;
+}
+
+.cloud-tag__cloud-name {
+  @include font(10px, 400, 12px);
+}
+
+.cloud-tag__module-name {
+  @include font(10px, 700, 12px);
 }

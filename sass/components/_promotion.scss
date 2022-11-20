@@ -1,5 +1,7 @@
+//  * PROMOTION SECTION *
+
 .promotion {
-  margin-bottom: 96px;
+  margin-bottom: 48px;
 }
 
 .promotion__container {
@@ -9,18 +11,32 @@
 
   min-height: 540px;
   padding-left: 36px;
-  padding-right: 36px;
 
   background-color: var(--secondary-bg-color);
   border-radius: 18px;
 }
 
-//  left side
+//  * LEFT SIDE *
 .promotion__left {
   display: flex;
   flex-direction: column;
 
   width: 360px;
+}
+
+//  title
+.promotion__title {
+  margin-bottom: 30px;
+
+  @include font(30px, 500, 42px);
+  letter-spacing: -0.021px;
+}
+
+//  text
+.promotion__text {
+  margin-bottom: 48px;
+
+  @include font(13px, 400, 18px);
 }
 
 .promotion__buttons {
@@ -30,24 +46,28 @@
   gap: 12px;
 }
 
-// right side
+// * RIGHT SIDE *
 .promotion__right {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding-left: 38px;
+  padding-right: 38px;
 }
 
-.img-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 400px;
+// overlay image
+.visual {
+  position: absolute;
+  top: -70px;
+  width: 100%;
+  height: 600px;
 
-  border: 1px solid tomato;
-}
-
-.img-area__description {
-  max-width: 70px;
-  text-align: center;
+  background-color: rgba(106, 132, 226, 0.1);
+  background-image: url("../img/graphics.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 267px 100%;
+  border-radius: 0px 18px 0px 0px;
 }

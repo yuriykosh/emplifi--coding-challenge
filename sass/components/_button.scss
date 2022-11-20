@@ -9,16 +9,55 @@
   border: 0;
   border-radius: 6px;
   background: var(--gradient-green);
-  color: #ffffff;
+  color: var(--text-color--bright);
 
   @include font(13px, 600, 18px);
 
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: var(--gradient-green--hover);
   }
   &:active {
     background: var(--gradient-green--active);
+  }
+}
+
+.button--link {
+  position: relative;
+  min-width: 118px;
+
+  background: transparent;
+  color: var(--text-color--accent);
+
+  @include font(13px, 400, 18px);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: transparent;
+    color: var(--text-color--accent);
+
+    &::after {
+      opacity: 0;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    background: transparent;
+    color: var(--text-color--accent);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 31px;
+    width: calc(100% - 48px);
+    height: 1px;
+
+    background-color: var(--text-color--accent);
+    opacity: 0.3;
   }
 }
