@@ -29,12 +29,18 @@
 
   <body>
     <div class="page-wrapper">
+      <!-- SIDEBAR -->
       <aside class="sidebar">
+        <!-- PLATFORM-NAV -->
         <nav class="platform-nav">
+          <!-- top navigation -->
           <ul class="platform-nav__list">
-            <li class="platform-nav__icon-box">
-              <div class="platform-nav__icon"></div>
+            <li class="logo">
+              <svg class="logo__icon">
+                <use href="./img/sprite.svg#emplifi-logo"></use>
+              </svg>
             </li>
+
             <li class="platform-nav__icon-box">
               <div class="platform-nav__icon"></div>
             </li>
@@ -69,9 +75,13 @@
               <div class="platform-nav__icon"></div>
             </li>
           </ul>
+
+          <!-- bottom navigation -->
           <ul class="platform-nav__nav-list">
             <li class="platform-nav__icon-box platform-nav__icon-box--accent">
-              <div class="platform-nav__icon platform-nav__icon--accent"></div>
+              <svg class="platform-nav__icon platform-nav__icon--add">
+                <use href="./img/sprite.svg#add"></use>
+              </svg>
             </li>
             <li class="platform-nav__icon-box">
               <div class="platform-nav__icon"></div>
@@ -81,81 +91,96 @@
             </li>
           </ul>
         </nav>
+
+        <!-- SECTION-NAV -->
         <div class="community-nav visually-hidden">
           <div class="community-nav__header">
             <p class="community-nav__title">COMMUNITY</p>
-            <button class="community-nav__close-button" type="button"></button>
           </div>
         </div>
       </aside>
+
+      <!-- CONTENT -->
       <main class="content">
+        <!-- PROMOTION SECTION -->
         <section class="promotion">
           <div class="promotion__container">
-            <div class="promotion__left">
-              <ul class="cloud-tag">
-                <li class="cloud-tag__cloud-name">Cloud name</li>
-                <li class="cloud-tag__module-name">Module name</li>
-              </ul>
+            <div class="promotion__wrapper">
+              <!-- left side -->
+              <div class="promotion__left">
+                <ul class="cloud-tag">
+                  <li class="cloud-tag__cloud-name">Cloud name</li>
+                  <li class="cloud-tag__module-name">Module name</li>
+                </ul>
 
-              <h1 class="promotion__title">
-                Header here 2 lines max lorem ipsum dolor sit
-              </h1>
+                <h1 class="promotion__title">
+                  Header here 2 lines max lorem ipsum dolor sit
+                </h1>
 
-              <p class="promotion__text">
-                Maximum 3 lines of text consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam. Lorem ipsum dolor sit amet color samet
-                gradient nice.
-              </p>
+                <p class="promotion__text">
+                  Maximum 3 lines of text consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam. Lorem ipsum dolor sit amet color samet
+                  gradient nice.
+                </p>
 
-              <div class="promotion__buttons">
-                <button class="button">Request a 30 minute demo</button>
-                <a class="button button--link" href="/">Learn more</a>
+                <div class="promotion__buttons">
+                  <button class="button">Request a 30 minute demo</button>
+                  <a class="button button--link" href="/">Learn more</a>
+                </div>
               </div>
-            </div>
-            <div class="promotion__right">
-              <div class="img-area">
-                <p class="img-area__description">Visual Safe area</p>
-              </div>
-              <div class="visual">
-                <div class="visual__picture"></div>
+
+              <!-- right side -->
+              <div class="promotion__right">
+                <div class="img-area">
+                  <p class="img-area__description">Visual Safe area</p>
+                </div>
+                <div class="visual">
+                  <div class="visual__picture"></div>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
+        <!-- FEATURES SECTION -->
         <section class="features">
-          <ul class="features__container">
-            <li class="features__item">
-              <h2 class="features__title">
-                One Line lorem ipsum dolor sit amet
-              </h2>
-              <p class="features__text">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. lorem ipsum
-                dolor sit amet lorem.
-              </p>
-            </li>
-            <li class="features__item">
-              <h2 class="features__title">
-                One Line lorem ipsum dolor sit amet
-              </h2>
-              <p class="features__text">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. lorem ipsum
-                dolor sit amet lorem.
-              </p>
-            </li>
-            <li class="features__item">
-              <h2 class="features__title">
-                One Line lorem ipsum dolor sit amet
-              </h2>
-              <p class="features__text">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. lorem ipsum
-                dolor sit amet lorem.
-              </p>
-            </li>
-          </ul>
+          <div class="features__container">
+            <ul class="features__list">
+              <li class="features__item">
+                <h2 class="features__title">
+                  One Line lorem ipsum dolor sit amet
+                </h2>
+                <p class="features__text">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. lorem ipsum
+                  dolor sit amet lorem.
+                </p>
+              </li>
+
+              <li class="features__item">
+                <h2 class="features__title">
+                  One Line lorem ipsum dolor sit amet
+                </h2>
+                <p class="features__text">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. lorem ipsum
+                  dolor sit amet lorem.
+                </p>
+              </li>
+
+              <li class="features__item">
+                <h2 class="features__title">
+                  One Line lorem ipsum dolor sit amet
+                </h2>
+                <p class="features__text">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. lorem ipsum
+                  dolor sit amet lorem.
+                </p>
+              </li>
+            </ul>
+          </div>
         </section>
       </main>
     </div>

@@ -1,0 +1,30 @@
+// * LOGO *
+
+.logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 24px;
+
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 48px;
+    width: 48px;
+    height: 1px;
+
+    background: var(--icon-color);
+    opacity: 0.3;
+  }
+}
+
+.logo__icon {
+  width: 24px;
+  height: 24px;
+}

@@ -1,9 +1,28 @@
+//  * PROMOTION IMAGE AREA *
+
 .img-area {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 400px;
   height: 400px;
+  margin-left: 38px;
+  margin-right: 38px;
+
+  @media screen and (min-width: 1360px) {
+    margin-left: 108px;
+    margin-right: 108px;
+  }
+
+  @media screen and (min-width: 1560px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .img-area__description {

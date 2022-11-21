@@ -1,3 +1,5 @@
+// * COMMUNITY NAVIGATION *
+
 .community-nav {
   grid-area: community-nav;
 
@@ -5,4 +7,17 @@
   height: 100vh;
 
   background-color: #fff;
+}
+
+.community-nav__header {
+  display: flex;
+  align-items: center;
+
+  padding: 24px;
+}
+
+.community-nav__title {
+  @include font(10px, 700, 12px);
+  letter-spacing: 0.01px;
+  text-transform: uppercase;
 }

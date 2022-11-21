@@ -1,3 +1,5 @@
+//  * BUTTONS *
+
 .button {
   display: flex;
   justify-content: center;
@@ -21,6 +23,10 @@
   }
   &:active {
     background: var(--gradient-green--active);
+  }
+
+  @media screen and (min-width: 1280px) and (max-width: 1359px) {
+    @include font(16px, 500, 24px);
   }
 }
 
@@ -59,5 +65,14 @@
 
     background-color: var(--text-color--accent);
     opacity: 0.3;
+  }
+
+  @media screen and (min-width: 1280px) and (max-width: 1359px) {
+    @include font(16px, 500, 24px);
+    letter-spacing: -0.011px;
+
+    &::after {
+      top: 37px;
+    }
   }
 }
